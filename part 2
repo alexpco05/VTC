@@ -1,0 +1,28 @@
+CA_Marks = (Test_Marks * 0.4) + (Project_Marks * 0.3) + (Workshop_Marks * 0.3)
+Module_Marks = (CA_Marks * 0.5) + (Exam_Marks * 50)
+
+if CA_Marks < 40 or Exam_Marks < 40 :
+    Module_Grade = "F"
+elif CA_Marks >=40 and Exam_Marks >= 40 and Module_Marks >=75 and Module_Marks <=100:
+    Module_Grade = "A"
+elif CA_Marks >=40 and Exam_Marks >= 40 and Module_Marks >=65 and Module_Marks <75:
+    Module_Grade = "B"
+elif CA_Marks >=40 and Exam_Marks >= 40 and Module_Marks >=40 and Module_Marks <65:
+    Module_Grade = "C"
+
+if Module_Grade == "F":
+    Remarks = "Restudy"
+    Comments = "Don't get discouraged, keep trying!"
+elif Module_Grade == "A":
+    Remarks = "Pass with A grade"
+    Comments = "Well done!
+elif Module_Grade == "B":
+    Remarks = "Pass with B grade"
+    Comments = "Almost can get an A grade, work harder!"
+elif Module_Grade == "C":
+    Remarks = "Pass with C grade"
+    Comments = "Please be careful, you only qualified for a C."
+else:
+    Remarks = "Invalid Module Grade"
+    Comments = "Please double-check the input marks."
+

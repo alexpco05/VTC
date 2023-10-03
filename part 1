@@ -1,0 +1,41 @@
+while True:
+    student_name = input("Student Name:")
+    if student_name.isalpha() and student_name:
+        break
+    else:
+        print("Invalid name, please try again.")
+
+while True:
+    student_id = int(input("Student ID: "))
+    if Student_ID.isdigit() and len(Student_id) == 9 and Student_id:
+        break
+    else:
+        print("Invalid Student ID, please try again.")
+
+while True:
+    Test_Marks = float(input("Test Marks: "))
+    if Test_Marks.isdigit() and Test_Marks and Test_Marks >= 0 and Test_Marks<= 100 :
+        break
+    else:
+        print("Invalid Test Marks, please try again.")
+
+while True:
+    Project_Marks = float(input("Project Marks :"))
+    if Project_Marks.isdigit and Project_Marks and Project_Marks >= 0 and Project_Marks<= 100 :
+        break
+    else:
+        print("Invalid Project Marks, please try again.")
+    
+while True:
+    workshop_marks = float(input("Workshop Marks :"))
+    if workshop_marks.isdigit and workshop_marks and workshop_marks >= 0 and workshop_marks<= 100 :
+        break
+    else:
+        print("Invalid Workshop Marks, please try again.")
+
+while True:
+    exam_marks = float(input("Exam Marks :"))
+    if exam_marks and exam_marks and exam_marks >= 0 and exam_marks<= 100 :
+        break
+    else:
+        print("Invalid Exam Marks, please try again.")

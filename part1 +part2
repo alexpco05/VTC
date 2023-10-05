@@ -1,0 +1,116 @@
+def studentname(student_name):
+    while True:
+        
+        if student_name.isalpha() and student_name:
+            break
+        else:
+            print("Invalid name, please try again.")
+            student_name = input("Student Name:")
+
+
+def studentid(student_id):
+    while True:
+
+        if student_id.isdigit() and len(student_id) == 9 and student_id:
+            student_id = int(student_id)
+            break
+        else:
+            print("Invalid Student ID, please try again.")
+            student_id = input("Student ID: ")
+
+def testmarks(test_marks):
+    while True:
+        
+        if test_marks.isdigit() and 0 <= float(test_marks) <= 100:
+            test_marks = float(test_marks)
+            break
+        else:
+            print("Invalid Test Marks, please try again.")
+            test_marks = input("Test Marks: ")
+
+def ProjectMarks(Project_Marks):
+    while True:
+        
+        if Project_Marks.isdigit and float(Project_Marks) and float(Project_Marks) >= 0 and float(Project_Marks) <= 100 :
+            Project_Marks = float(Project_Marks)
+            break
+        else:
+            print("Invalid Project Marks, please try again.")
+            Project_Marks = input("Project Marks :")
+    
+def workshopmarks(workshop_marks):
+    while True:
+        
+        if workshop_marks.isdigit and float(workshop_marks) and float(workshop_marks) >= 0 and float(workshop_marks) <= 100 :
+            workshop_marks = float(workshop_marks)
+            break
+        else:
+            print("Invalid Workshop Marks, please try again.")
+            workshop_marks = input("Workshop Marks :")
+
+def exammarks(exam_marks):
+    while True:
+        
+        if exam_marks.isdigit and float(exam_marks) and float(exam_marks) >= 0 and float(exam_marks)<= 100 :
+            exam_marks = float(exam_marks)
+            break
+        else:
+            print("Invalid Exam Marks, please try again.")
+            exam_marks = input("Exam Marks :")
+            
+student_name = input("Student Name:")
+studentname(student_name)
+
+student_id = input("Student ID: ")
+studentid(student_id)
+
+test_marks = input("Test Marks: ")
+testmarks(test_marks)
+
+Project_Marks = input("Project Marks :")
+ProjectMarks(Project_Marks)
+
+workshop_marks = input("Workshop Marks :")
+workshopmarks(workshop_marks)
+
+exam_marks = input("Exam Marks :")
+exammarks(exam_marks)
+
+CA_Marks = round((float(test_marks) * 0.4) + (float(Project_Marks) * 0.3) + (float(workshop_marks) * 0.3),1)
+Module_Marks = round((float(CA_Marks) * 0.5) + (float(exam_marks) * 0.5),1)
+
+if float(CA_Marks) < 40 or float(exam_marks) < 40 :
+    Module_Grade = "F"
+elif float(CA_Marks) >=40 and float(exam_marks) >= 40 and float(Module_Marks) >=75 and float(Module_Marks) <=100:
+    Module_Grade = "A"
+elif float(CA_Marks) >=40 and float(exam_marks) >= 40 and float(Module_Marks) >=65 and float(Module_Marks) <75:
+    Module_Grade = "B"
+elif float(CA_Marks) >=40 and float(exam_marks) >= 40 and float(Module_Marks) >=40 and float(Module_Marks) <65:
+    Module_Grade = "C"
+
+if Module_Grade == "F":
+    Remarks = "Restudy"
+    Comments = "Don't get discouraged, keep trying!"
+elif Module_Grade == "A":
+    Remarks = "Pass with A grade"
+    Comments = "Well done!"
+elif Module_Grade == "B":
+    Remarks = "Pass with B grade"
+    Comments = "Almost can get an A grade, work harder!"
+elif Module_Grade == "C":
+    Remarks = "Pass with C grade"
+    Comments = "Please be careful, you only qualified for a C."
+else:
+    Remarks = "Invalid Module Grade"
+    Comments = "Please double-check the input marks."
+
+print("Student Name:" + student_name)
+print("Student ID:" + student_id)
+print("Test Marks:" + test_marks)
+print("Project Marks:" + Project_Marks)
+print("Workshop Marks:" + workshop_marks)
+print("Exam Marks:" + exam_marks)
+print("Module Marks:" + str(Module_Marks))
+print("Module Grade: " + Module_Grade)
+print("Remarks: " + Remarks)
+print(Comments)

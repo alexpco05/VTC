@@ -9,7 +9,7 @@ def student_name(student_name):
 
 def student_id(student_id):
     while True:
-        student_id = input("Student ID: ")
+        student_id = input("Enter Student ID: ")
         if student_id.isdigit() and len(student_id) == 9 and student_id:
             student_id = int(student_id)
             break
@@ -18,7 +18,7 @@ def student_id(student_id):
 
 def test_marks(test_marks):
     while True:
-        test_marks = input("Test Marks: ")
+        test_marks = input("Enter Test Marks: ")
         if test_marks.isdigit() and 0 <= float(test_marks) <= 100:
             test_marks = float(test_marks)
             break
@@ -27,7 +27,7 @@ def test_marks(test_marks):
 
 def Project_Marks(Project_Marks):
     while True:
-        Project_Marks = input("Project Marks :")
+        Project_Marks = input("Enter Project Marks :")
         if Project_Marks.isdigit and float(Project_Marks) and float(Project_Marks) >= 0 and float(Project_Marks) <= 100 :
             Project_Marks = float(Project_Marks)
             break
@@ -36,7 +36,7 @@ def Project_Marks(Project_Marks):
     
 def workshop_marks(workshop_marks):
     while True:
-        workshop_marks = input("Workshop Marks :")
+        workshop_marks = input("Enter Workshop Marks :")
         if workshop_marks.isdigit and float(workshop_marks) and float(workshop_marks) >= 0 and float(workshop_marks) <= 100 :
             workshop_marks = float(workshop_marks)
             break
@@ -45,7 +45,7 @@ def workshop_marks(workshop_marks):
 
 def exam_marks(exam_marks):
     while True:
-        exam_marks = input("Exam Marks :")
+        exam_marks = input("Enter Exam Marks :")
         if exam_marks.isdigit and float(exam_marks) and float(exam_marks) >= 0 and float(exam_marks)<= 100 :
             exam_marks = float(exam_marks)
             break

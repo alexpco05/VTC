@@ -21,7 +21,7 @@ def studentid(student_id):
 def testmarks(test_marks):
     while True:
         
-        if test_marks.isdigit() and 0 <= float(test_marks) <= 100:
+        if test_marks.isdigit() and student_id and 0 <= float(test_marks) <= 100:
             test_marks = float(test_marks)
             break
         else:
@@ -31,7 +31,7 @@ def testmarks(test_marks):
 def ProjectMarks(Project_Marks):
     while True:
         
-        if Project_Marks.isdigit and float(Project_Marks) and float(Project_Marks) >= 0 and float(Project_Marks) <= 100 :
+        if Project_Marks.isdigit() and Project_Marks and float(Project_Marks) >= 0 and float(Project_Marks) <= 100 :
             Project_Marks = float(Project_Marks)
             break
         else:
@@ -41,7 +41,7 @@ def ProjectMarks(Project_Marks):
 def workshopmarks(workshop_marks):
     while True:
         
-        if workshop_marks.isdigit and float(workshop_marks) and float(workshop_marks) >= 0 and float(workshop_marks) <= 100 :
+        if workshop_marks.isdigit() and float(workshop_marks) and float(workshop_marks) >= 0 and float(workshop_marks) <= 100 :
             workshop_marks = float(workshop_marks)
             break
         else:
@@ -51,7 +51,7 @@ def workshopmarks(workshop_marks):
 def exammarks(exam_marks):
     while True:
         
-        if exam_marks.isdigit and float(exam_marks) and float(exam_marks) >= 0 and float(exam_marks)<= 100 :
+        if exam_marks.isdigit() and float(exam_marks) and float(exam_marks) >= 0 and float(exam_marks)<= 100 :
             exam_marks = float(exam_marks)
             break
         else:
